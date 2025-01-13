@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+# Ruff configuration
+select = ["E", "F"]
+ignore = ["E501"]  # Ignore long-line errors
+exclude = ["migrations", "__pycache__", "fast_google", ".venv", "env", "venv"]
+fix = true
+
+[tool.mypy]
+# Mypy configuration
+python_version = "3.11"  # Replace with your Python version
+ignore_missing_imports = true
+strict_optional = true
+check_untyped_defs = true
+show_error_codes = true
+# exclude = "fast_google"
+
+[tool.pydoclint]
+# Pydoclint configuration
+convention = "google"  # Use "google" or "numpy" style docstrings
+ignore = ["D100", "D101"]  # Ignore missing module and class docstrings
+max_line_length = 88
+exclude = ["fast_google"]

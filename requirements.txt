@@ -1,0 +1,8 @@
+fastapi==0.103.1
+uvicorn==0.23.2
+gspread==5.9.0
+google-auth==2.23.2
+google-auth-oauthlib==1.2.1
+ruff==0.9.1
+mypy
+pydoclint==0.5.15

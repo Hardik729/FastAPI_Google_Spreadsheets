@@ -1,0 +1,8 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.pylintEnabled": false,  // Disable Pylint if not needed
+    "python.formatting.provider": "none",   // Avoid conflicts with formatters
+    "python.analysis.typeCheckingMode": "strict" // Optional for stricter type checking
+}
